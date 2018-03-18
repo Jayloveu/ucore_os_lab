@@ -1,7 +1,3 @@
-*~
-obj/
-bin/
-.gdb.in
 .qemu.out
 cscope.*
 ncscope.*
@@ -20,3 +16,6 @@ a.out
 chytesting
 disk0
 *.orig
+.idea/
+CMakeLists.txt
+cmake-build-debug/
