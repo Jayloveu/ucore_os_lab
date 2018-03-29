@@ -1,0 +1,26 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "hash_map": "c",
+        "list": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "vector": "c",
+        "__config": "c",
+        "algorithm": "cpp",
+        "__bit_reference": "c",
+        "__functional_base": "c",
+        "atomic": "c",
+        "bitset": "c",
+        "chrono": "c",
+        "functional": "c",
+        "iterator": "c",
+        "limits": "c",
+        "locale": "c",
+        "memory": "c",
+        "ratio": "c",
+        "system_error": "c",
+        "tuple": "c",
+        "type_traits": "c"
+    }
+}
