@@ -376,7 +376,7 @@ get_pte(pde_t *pgdir, uintptr_t la, bool create) {
     if (!(*pdep & PTE_P)) {
         if (!create) {
             return NULL;
-}
+        }
         struct Page *page = alloc_page();
         if (page == NULL) {
             return NULL;

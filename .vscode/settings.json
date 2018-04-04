@@ -21,6 +21,15 @@
         "ratio": "c",
         "system_error": "c",
         "tuple": "c",
-        "type_traits": "c"
+        "type_traits": "c",
+        "__functional_03": "c",
+        "__string": "c",
+        "__functional_base_03": "cpp",
+        "__hash_table": "cpp",
+        "__tuple": "cpp",
+        "utility": "cpp",
+        "ostream": "c",
+        "__locale": "c",
+        "ios": "c"
     }
 }
