@@ -30,6 +30,11 @@
         "utility": "cpp",
         "ostream": "c",
         "__locale": "c",
-        "ios": "c"
+        "ios": "c",
+        "__split_buffer": "c",
+        "initializer_list": "c",
+        "string_view": "c",
+        "kmalloc.h": "c",
+        "typeinfo": "c"
     }
 }
