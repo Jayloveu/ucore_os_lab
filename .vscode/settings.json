@@ -35,6 +35,8 @@
         "initializer_list": "c",
         "string_view": "c",
         "kmalloc.h": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "ulib.h": "c",
+        "console.h": "c"
     }
 }
