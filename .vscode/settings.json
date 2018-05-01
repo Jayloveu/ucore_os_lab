@@ -37,6 +37,8 @@
         "kmalloc.h": "c",
         "typeinfo": "c",
         "ulib.h": "c",
-        "console.h": "c"
+        "console.h": "c",
+        "sched.h": "c",
+        "default_sched.h": "c"
     }
 }
