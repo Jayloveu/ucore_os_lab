@@ -114,7 +114,7 @@ alloc_proc(void) {
         proc->tf = NULL;
         proc->cr3 = boot_cr3;
         proc->flags = 0;
-        memset(proc->name, 0, PROC_NAME_LEN + 1);
+        memset(proc->name, 0, PROC_NAME_LEN);
      //LAB5 2015011403 : (update LAB4 steps)
     /*
      * below fields(add in LAB5) in proc_struct need to be initialized	
