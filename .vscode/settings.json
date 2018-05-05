@@ -39,6 +39,7 @@
         "ulib.h": "c",
         "console.h": "c",
         "sched.h": "c",
-        "default_sched.h": "c"
+        "default_sched.h": "c",
+        "assert.h": "c"
     }
 }

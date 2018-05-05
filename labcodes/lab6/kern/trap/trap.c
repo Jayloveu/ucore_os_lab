@@ -228,15 +228,15 @@ trap_dispatch(struct trapframe *tf) {
          * (3) Too Simple? Yes, I think so!
          */
         ticks ++;
+        sched_class_proc_tick(current);
         if (ticks % TICK_NUM == 0) {
             // print_ticks();
-            sched_class_proc_tick(current);
         }
         /* LAB5 2015011403 */
         /* you should update you lab1 code (just add ONE or TWO lines of code):
          *    Every TICK_NUM cycle, you should set current process's current->need_resched = 1
          */
-        /* LAB6 YOUR CODE */
+        /* LAB6 2015011403 */
         /* you should upate you lab5 code
          * IMPORTANT FUNCTIONS:
 	     * sched_class_proc_tick
