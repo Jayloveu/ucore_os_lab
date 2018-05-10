@@ -8,24 +8,24 @@
                 "/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include",
                 "/Library/Developer/CommandLineTools/usr/include",
                 "/usr/include",
-                "${workspaceRoot}/labcodes/lab6/boot",
-                "${workspaceRoot}/labcodes/lab6/libs",
-                "${workspaceRoot}/labcodes/lab6/user/",
-                "${workspaceRoot}/labcodes/lab6/user/libs",
-                "${workspaceRoot}/labcodes/lab6/tools/",
-                "${workspaceRoot}/labcodes/lab6/kern/",
-                "${workspaceRoot}/labcodes/lab6/kern/debug",
-                "${workspaceRoot}/labcodes/lab6/kern/driver",
-                "${workspaceRoot}/labcodes/lab6/kern/fs",
-                "${workspaceRoot}/labcodes/lab6/kern/init",
-                "${workspaceRoot}/labcodes/lab6/kern/libs",
-                "${workspaceRoot}/labcodes/lab6/kern/mm",
-                "${workspaceRoot}/labcodes/lab6/kern/process",
-                "${workspaceRoot}/labcodes/lab6/kern/schedule",
-                "${workspaceRoot}/labcodes/lab6/kern/sync",
-                "${workspaceRoot}/labcodes/lab6/kern/syscall",
-                "${workspaceRoot}/labcodes/lab6/kern/trap"
-                ],
+                "${workspaceRoot}/labcodes/lab7/boot",
+                "${workspaceRoot}/labcodes/lab7/libs",
+                "${workspaceRoot}/labcodes/lab7/user/",
+                "${workspaceRoot}/labcodes/lab7/user/libs",
+                "${workspaceRoot}/labcodes/lab7/tools/",
+                "${workspaceRoot}/labcodes/lab7/kern/",
+                "${workspaceRoot}/labcodes/lab7/kern/debug",
+                "${workspaceRoot}/labcodes/lab7/kern/driver",
+                "${workspaceRoot}/labcodes/lab7/kern/fs",
+                "${workspaceRoot}/labcodes/lab7/kern/init",
+                "${workspaceRoot}/labcodes/lab7/kern/libs",
+                "${workspaceRoot}/labcodes/lab7/kern/mm",
+                "${workspaceRoot}/labcodes/lab7/kern/process",
+                "${workspaceRoot}/labcodes/lab7/kern/schedule",
+                "${workspaceRoot}/labcodes/lab7/kern/sync",
+                "${workspaceRoot}/labcodes/lab7/kern/syscall",
+                "${workspaceRoot}/labcodes/lab7/kern/trap"
+            ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
             "browse": {
@@ -89,5 +89,5 @@
             }
         }
     ],
-    "version": 3
+    "version": 4
 }
