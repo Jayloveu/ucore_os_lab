@@ -40,6 +40,8 @@
         "console.h": "c",
         "sched.h": "c",
         "default_sched.h": "c",
-        "assert.h": "c"
+        "assert.h": "c",
+        "__mutex_base": "c",
+        "unistd.h": "c"
     }
 }
