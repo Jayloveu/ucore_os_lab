@@ -599,7 +599,7 @@ load_icode_read(int fd, void *buf, size_t len, off_t offset) {
   
 static int
 load_icode(int fd, int argc, char **kargv) {
-    /* LAB8:EXERCISE2 YOUR CODE  HINT:how to load the file with handler fd  in to process's memory? how to setup argc/argv?
+    /* LAB8:EXERCISE2 2015011403 HINT:how to load the file with handler fd  in to process's memory? how to setup argc/argv?
      * MACROs or Functions:
      *  mm_create        - create a mm
      *  setup_pgdir      - setup pgdir in mm
@@ -748,25 +748,25 @@ load_icode(int fd, int argc, char **kargv) {
     current->cr3 = PADDR(mm->pgdir);
     lcr3(PADDR(mm->pgdir));
 
-    //(6) setup trapframe for user environment
     //setup argc, argv
     uint32_t argv_size=0;
     for (i = 0; i < argc; i ++) {
-        argv_size += strnlen(kargv[i],EXEC_MAX_ARG_LEN + 1)+1;
+        argv_size += strnlen(kargv[i], EXEC_MAX_ARG_LEN + 1) + 1;
     }
 
-    uintptr_t stacktop = USTACKTOP - (argv_size/sizeof(long)+1)*sizeof(long);
-    char** uargv=(char **)(stacktop  - argc * sizeof(char *));
-    
+    uintptr_t stacktop = USTACKTOP - (argv_size / sizeof(int) + 1) * sizeof(int);
+    char** uargv = (char **)(stacktop  - argc * sizeof(char *));
+
     argv_size = 0;
     for (i = 0; i < argc; i ++) {
-        uargv[i] = strcpy((char *)(stacktop + argv_size ), kargv[i]);
-        argv_size +=  strnlen(kargv[i],EXEC_MAX_ARG_LEN + 1)+1;
+        uargv[i] = strcpy((char *)(stacktop + argv_size), kargv[i]);
+        argv_size += strnlen(kargv[i], EXEC_MAX_ARG_LEN + 1) + 1;
     }
-    
+
     stacktop = (uintptr_t)uargv - sizeof(int);
     *(int *)stacktop = argc;
     
+    //(6) setup trapframe for user environment
     struct trapframe *tf = current->tf;
     memset(tf, 0, sizeof(struct trapframe));
 

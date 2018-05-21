@@ -608,10 +608,10 @@ sfs_io_nolock(struct sfs_fs *sfs, struct sfs_inode *sin, void *buf, off_t offset
         if ((ret = sfs_buf_op(sfs, buf, size, ino, blkoff)) != 0) {
             goto out;
         }
+        alen += size;
         if (nblks == 0) {
             goto out;
         }
-        alen += size;
         buf += size;
         blkno ++;
         nblks --;
